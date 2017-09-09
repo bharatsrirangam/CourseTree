@@ -2,7 +2,7 @@
 *.class
 
 # .DS_Store Files
-*.DS_Store Files
+*.DS_Store
 
 # Log file
 *.log
