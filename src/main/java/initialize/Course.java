@@ -22,10 +22,10 @@ public class Course implements Serializable
 	@SerializedName("description")
 	@Expose
 	private String description;
-	@SerializedName("Pre")
+	@SerializedName("pre")
 	@Expose
 	private List<String> pre = null;
-	@SerializedName("Post")
+	@SerializedName("post")
 	@Expose
 	private List<String> post = null;
 	@SerializedName("concentration")
@@ -38,13 +38,13 @@ public class Course implements Serializable
 
 	/**
 	* No args constructor for use in serialization
-	* 
+	*
 	*/
 	public Course() {
 	}
 
 	/**
-	* 
+	*
 	* @param concentration
 	* @param post
 	* @param pre
