@@ -1,14 +1,14 @@
 //-----------------------------------com.CourseTree.Catalog.java-----------------------------------
 
-	package com.CourseTree;
+	package main.java.initialize;
 
 	import java.io.Serializable;
 	import java.util.List;
 	import com.google.gson.annotations.Expose;
 	import com.google.gson.annotations.SerializedName;
-	import org.apache.commons.lang.builder.EqualsBuilder;
-	import org.apache.commons.lang.builder.HashCodeBuilder;
-	import org.apache.commons.lang.builder.ToStringBuilder;
+	//import org.apache.commons.lang.builder.EqualsBuilder;
+	//import org.apache.commons.lang.builder.HashCodeBuilder;
+	//import org.apache.commons.lang.builder.ToStringBuilder;
 
 	public class Catalog implements Serializable
 	{
@@ -34,6 +34,10 @@
 		this.catalog = catalog;
 	}
 
+	public void add(Course toAdd) {
+		catalog.add(toAdd);
+	}
+
 	public List<Course> getCatalog() {
 		return catalog;
 	}
@@ -42,7 +46,7 @@
 		this.catalog = catalog;
 	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return new ToStringBuilder(this).append("catalog", catalog).toString();
 	}
@@ -62,6 +66,6 @@
 		}
 		Catalog rhs = ((Catalog) other);
 		return new EqualsBuilder().append(catalog, rhs.catalog).isEquals();
-	}
+	}*/
 
 }

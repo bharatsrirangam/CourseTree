@@ -1,14 +1,16 @@
 //-----------------------------------com.CourseTree.Course.java-----------------------------------
 
-package com.CourseTree;
+//package com.CourseTree;
+package main.java.initialize;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.ArrayList;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.apache.commons.lang.builder.ToStringBuilder;
+//import org.apache.commons.lang3.builder.EqualsBuilder;
+//import org.apache.commons.lang3.builder.HashCodeBuilder;
+//import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Course implements Serializable
 {
@@ -41,6 +43,8 @@ public class Course implements Serializable
 	* 
 	*/
 	public Course() {
+
+		this("","","",new ArrayList<String>(), new ArrayList<String>(), "", 3);
 	}
 
 	/**
@@ -120,7 +124,7 @@ public class Course implements Serializable
 		this.credits = credits;
 	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return new ToStringBuilder(this).append("name", name).append("iD", iD).append("description", description).append("pre", pre).append("post", post).append("concentration", concentration).append("credits", credits).toString();
 	}
@@ -140,6 +144,6 @@ public class Course implements Serializable
 		}
 		Course rhs = ((Course) other);
 		return new EqualsBuilder().append(concentration, rhs.concentration).append(post, rhs.post).append(pre, rhs.pre).append(description, rhs.description).append(name, rhs.name).append(credits, rhs.credits).append(iD, rhs.iD).isEquals();
-	}
+	}*/
 
 }
