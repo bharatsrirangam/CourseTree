@@ -1,13 +1,83 @@
-{ 
-   "catalog": [
+{
+   “catalog”: [
+	    {
+    		“name”: ”Introduction to Computing”,
+    		“ID”: “CS1301”,
+    		“description”: “Introduction to computing principles and programming practices with an emphasis on the design, construction and implementation of problem solutions use of software tools.”,
+    		“pre”: [],
+    		“post”: [“CS1331”],
+    		“concentration”: [“core”],
+    		“credits”: 3
+    	},
+
+	    {
+		    “name”: ”Introduction to Object Oriented Programming”,
+		    “ID”: “CS1331”,
+		    “description”: “Introduction to techniques and methods of object-oriented programming such an encapsulation, inheritance, and polymorphism. Emphasis on software development and individual programming skills.”,
+		    “pre”: [“CS1301”],
+		    “post”: [“CS1332”,"CS2340","CS2110"],
+		    “concentration”: [“core”],
+		    “credits”: 3
+	    },
+
+	    {
+        “name”: ”Data Structures and Algorithms for Applications”,
+        “ID”: “CS1332”,
+        “description”: “Computer data structures and algorithms in the context of object-oriented programming. Focus on software development towards applications”,
+        “pre”: [“CS1331”],
+        “post”: [“CS1310,CS1311,CS3630,CS3600”],
+        “concentration”: [“core”],
+        “credits”: 3
+      },
+
+      {
+    		“name”: ”Computing, Society, and Professionalism”,
+    		“ID”: “CS4001”,
+    		“description”: “Examines the role and impact of information and communication technology in society, with emphasis on ethical, professional, and public policy issues”,
+    		“pre”: [],
+    		“post”: [],
+    		“concentration”: [“core”],
+    		“credits”: 3
+    	},
+
+      {
+    		“name”: ”Freshman Leap Seminar”,
+    		“ID”: “CS1100”,
+    		“description”: “Small group discussions with first year students are led by one or more faculty members and include a variety of foundational, motivational, and topical subjects for computationalist.”,
+    		“pre”: [],
+    		“post”: [],
+    		“concentration”: [“core”],
+    		“credits”: 1
+    	},
+
+      {
+    		“name”: ”Objects and Design”,
+    		“ID”: “CS2340”,
+    		“description”: “Object-oriented programming methods for dealing with large programs. Focus on quality processes, effective debugging techniques, and testing to assure a quality product.”,
+    		“pre”: [“CS1331”],
+    		“post”: [],
+    		“concentration”: [“core”],
+    		“credits”: 3
+    	},
+
+      {
+    		“name”: ”Linear Algebra”,
+    		“ID”: “MATH1554”,
+    		“description”: “Linear algebra eigenvalues, eigenvectors, applications to linear systems, least squares, diagnolization, quadratic forms.”,
+    		“pre”: [],
+    		“post”: [“CS3012”],
+    		“concentration”: [“core”],
+    		“credits”: 4
+    	},
+
 	{
-		"name":"Introduction to Object Oriented Programming",
-		"ID": "CS1331",
-		"description": "course for intro java",
-		"Pre": ["CS1301"],
-		"Post": ["CS1332"],
-		"concentration": "",
-		"credits": 0
-	}
-   ]	
+    		“name”: ””,
+    		“ID”: “”,
+    		“description”: “”,
+    		“pre”: [“”],
+    		“post”: [“”],
+    		“concentration”: [“”],
+    		“credits”: 0
+    	}
+    ]
 }
